@@ -1,0 +1,33 @@
+<h2>Feedback Form</h2>
+
+<div *ngIf="showThankYouMessage" class="thank-you-message">
+  <p>Thank you for your feedback!</p>
+</div>
+
+<form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name</label>
+    <input id="name" formControlName="name" />
+    <div *ngIf="feedbackForm.get('name')?.invalid && feedbackForm.get('name')?.touched">
+      Name is required and must be at least 3 characters.
+    </div>
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" />
+    <div *ngIf="feedbackForm.get('email')?.invalid && feedbackForm.get('email')?.touched">
+      Enter a valid email address.
+    </div>
+  </div>
+
+  <div>
+    <label for="message">Message</label>
+    <textarea id="message" formControlName="message"></textarea>
+    <div *ngIf="feedbackForm.get('message')?.invalid && feedbackForm.get('message')?.touched">
+      Message is required and cannot exceed 500 characters.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="feedbackForm.invalid">Submit</button>
+</form>

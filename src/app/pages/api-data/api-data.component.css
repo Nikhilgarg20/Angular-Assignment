@@ -1,0 +1,71 @@
+/* Container for the API data list */
+.api-data-container {
+    background-color: #007bff; 
+
+    max-width: 90%;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .post-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .post-item p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 5px;
+  }
+  
+  .post-meta {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+  }
+ 
+  
+  @media (max-width: 600px) {
+    .api-data-container {
+      padding: 15px;
+    }
+  
+    .post-item {
+      padding: 10px;
+    }
+  
+    .post-item h3 {
+      font-size: 16px;
+    }
+  
+    .post-item p {
+      font-size: 13px;
+    }
+  
+    .post-meta {
+      font-size: 11px;
+    }
+  }
+  

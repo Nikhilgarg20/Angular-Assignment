@@ -1,0 +1,68 @@
+/* Main container for the Home Page */
+.home-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the container horizontally */
+    text-align: center; /* Center-align text */
+    padding: 30px 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading style */
+  .home-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Dark gray for headings */
+    margin-bottom: 20px;
+  }
+  
+  /* Subtitle or introductory text */
+  .home-container p {
+    font-size: 18px;
+    color: #555; /* Medium gray for text */
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Call-to-action button */
+  .home-container .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for button */
+  .home-container .cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 600px) {
+    .home-container {
+      padding: 20px;
+    }
+  
+    .home-container h1 {
+      font-size: 28px;
+    }
+  
+    .home-container p {
+      font-size: 16px;
+    }
+  
+    .home-container .cta-button {
+      font-size: 14px;
+    }
+  }
+  
